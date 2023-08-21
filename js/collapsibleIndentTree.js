@@ -1,5 +1,5 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-import {queryCache, selectedNode,linkCache,vGraph,inVgraphButNotQueryCache} from './wikigrafoDataRepositories.js'
+import {queryCache, selectedNode,linkCache,vGraph,inVgraphButNotQueryCache} from './DataHandler.js'
 import {betterDirectRelations} from './predefinedQueries.js';
 import {queryHandler} from './queryHandler.js'
 import { update } from "./force_directed_graph.js";

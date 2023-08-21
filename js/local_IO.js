@@ -1,4 +1,4 @@
-import {queryCache, selectedNode, vGraph,linkCache} from './wikigrafoDataRepositories.js'
+import {queryCache, selectedNode, vGraph,linkCache} from './DataHandler.js'
 import { update } from "./force_directed_graph.js";
 import {directTree,reverseTree} from './collapsibleIndentTree.js'
 import {quantityTree} from './quantityTree.js'

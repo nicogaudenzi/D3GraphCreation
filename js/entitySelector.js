@@ -1,6 +1,6 @@
 import {betterDirectRelations} from './predefinedQueries.js';
 import {queryHandler} from './queryHandler.js'
-import { queryCache, vGraph } from './wikigrafoDataRepositories.js';
+import { queryCache, vGraph } from './DataHandler.js';
 //Global variables
 let midDictionary = {};
 let selectedSuggestion = null;

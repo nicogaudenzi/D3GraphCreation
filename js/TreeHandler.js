@@ -1,6 +1,6 @@
 "use strict"
 import {getPic,  directRelationsQuery,reverseRelationsQuery} from './predefinedQueries.js';
-import {selectedNode,queryCache,imageDict, vGraph, reverseQueryCache, linkCache} from './wikigrafoDataRepositories.js'
+import {selectedNode,queryCache,imageDict, vGraph, reverseQueryCache, linkCache} from './DataHandler.js'
 import {setupForceGraph,render,renderReverse,renderPic,redraw, updateGraphData} from './force_directed_graph.js';
 import {d3sparql} from './d3sparql.js'
 export {TreeHandler as demoQueries}

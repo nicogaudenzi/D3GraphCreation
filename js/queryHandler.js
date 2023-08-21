@@ -1,6 +1,6 @@
 import {json} from "https://cdn.skypack.dev/d3-fetch@3";
 
-import { queryCache } from "./wikigrafoDataRepositories.js";
+import { queryCache } from "./DataHandler.js";
 import {queryRequested,directResponseRecived} from './wikigrafo_events.js'
 
 export {queryHandler}

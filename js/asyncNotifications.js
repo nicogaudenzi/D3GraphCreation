@@ -2,7 +2,7 @@ import {queryRequested,directResponseRecived} from './wikigrafo_events.js'
 import {directTree,reverseTree} from './collapsibleIndentTree.js'
 import {quantityTree} from './quantityTree.js'
 import {resourcesTree} from './resourcesTree.js'
-import {queryCache} from './wikigrafoDataRepositories.js'
+import {queryCache} from './DataHandler.js'
 import {queryHandler} from './queryHandler.js'
 import {reverseRelationsQuery} from './predefinedQueries.js';
 
