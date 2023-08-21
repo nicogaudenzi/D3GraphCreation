@@ -1,20 +1,13 @@
 import { fisicaData } from "./fisica.js";
-import {batallasData} from "./batalla.js";
-import { musicaData } from "./musica.js";
-import {marvelData} from "./marvel.js";
-import { piratasData } from "./piratas.js";
 
-import {queryCache, selectedNode, vGraph,linkCache} from './wikigrafoDataRepositories.js'
+
+import {queryCache, selectedNode, vGraph,linkCache} from './DataHandler.js'
 import { update } from "./force_directed_graph.js";
 import {directTree,reverseTree} from './collapsibleIndentTree.js'
 import {quantityTree} from './quantityTree.js'
 import {resourcesTree} from './resourcesTree.js'
 
 const fisica= document.getElementById('fisicaExample'),
-    piratas=document.getElementById('piratasExample'),
-    batallas=document.getElementById('batallasExample'),
-    musica=document.getElementById('musicaExample'),
-    marvel=document.getElementById('marvelExample'),
     resultsContainer = document.getElementById("result"),
     reverseContainer = document.getElementById("reverse"),
     imgContainer = document.getElementById("img"),
@@ -25,22 +18,7 @@ fisica.onclick=function(){
     console.log("fisica");
     showExample(fisicaData);
 }
-piratas.onclick=function(){
-    console.log("piratas");
-    showExample(piratasData);
-}
-batallas.onclick=function(){
-    console.log("batallas")       
-    showExample(batallasData); 
-}
-musica.onclick=function(){
-    console.log("musica")
-    showExample(musicaData);
-}
-marvel.onclick=function(){
-    console.log("marvel")
-    showExample(marvelData);       
-}
+
 function showExample(json){
     vGraph.data={"nodes":[],"links":[]};
     vGraph.data.nodes=json.vGraph.nodes;
